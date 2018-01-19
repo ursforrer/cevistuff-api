@@ -1,10 +1,6 @@
-const routes = require('express').Router();
-const locationRoutes = require('./locationRoutes');
-const groupRoutes = require('./groupRoutes');
-const userRoutes = require('./userRoutes');
+const router = require('express').Router();
+const apiRoutes = require('./apiRoutes');
 
-//routes.use('/locations', locationRoutes);
-routes.use('/groups', groupRoutes);
-//routes.use('/users', userRoutes);
+router.use('/api', apiRoutes);
 
-module.exports = routes;
+module.exports = router;

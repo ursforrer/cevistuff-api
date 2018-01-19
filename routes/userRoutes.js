@@ -1,4 +1,4 @@
-const routes = require('express').Router();
+const router = require('express').Router();
 const userController = require('../controller/groupController');
 
-module.exports = routes;
+module.exports = router;
