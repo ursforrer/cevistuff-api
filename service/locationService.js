@@ -49,6 +49,6 @@ functions.updateLocation = function (LocationObject, callback) {
     }).catch((error) => {
         callback(error);
     });
-}
+};
 
 module.exports = functions;
